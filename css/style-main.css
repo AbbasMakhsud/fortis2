@@ -4531,8 +4531,8 @@ blockquote p {
   background-position: center center;
 }
 .divider .container {
-  /*padding-top: 60px;
-  padding-bottom: 60px;*/
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .divider .container.small-padding {
   padding-top: 30px;
@@ -6232,14 +6232,14 @@ blockquote p {
   display: block;
 }
 .search-form-wrapper form {
-  padding: 10px;
+  padding: 0px;
   position: relative;
 }
 .search-form-wrapper form label {
   margin: 0px;
   position: absolute;
   right: 11px;
-  top: 11px;
+  top: 2px;
 }
 .search-form-wrapper form label:before {
   color: #555555;
@@ -6248,13 +6248,13 @@ blockquote p {
   font-family: fontawesome;
   font-size: 16px;
   position: absolute;
-  right: 13px;
-  top: 6px;
+      right: 0px;
+    top: 0px;
 }
 .search-form-wrapper form input[type="text"] {
   background-color: #fff;
   border: 1px solid #c0c0c0;
-  height: 46px;
+  height: 35px;
   padding: 8px 17px;
   width: 100%;
 }
@@ -6276,14 +6276,14 @@ blockquote p {
 }
 /* -------- Form Round ---------- */
 .search-form-wrapper.round form input[type="text"] {
-  border-radius: 30px;
-  border-width: 4px;
+      border-radius: 9px;
+    border-width: 1px;
 }
 .search-form-wrapper.round form input[type="submit"] {
   height: auto;
   width: auto;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 .search-form-wrapper.round form label::before {
   color: #c0c0c0;
@@ -6670,4 +6670,8 @@ blockquote p {
 .buttonStyle{
       border: 1px solid;
     border-radius: 5px;
+}
+
+.searchForm{
+  margin: 0
 }
