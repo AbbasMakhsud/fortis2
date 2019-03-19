@@ -1132,8 +1132,29 @@
                   </ul> -->
                 </li>
                 <li>
-                  <a href="#"  type="button" class="btn btn-flat buttonStyle" data-toggle="modal" data-target=".bs-example-modal-lg" data-dismiss="modal"><img style="width: 20px;margin-right: 5px" src="images/paintbrush.png">Ustalar Klubu </a>
-                  <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <a href="#" type="button" class="btn btn-flat buttonStyle" data-toggle="modal" data-target=".bs-example-modal-lg" data-dismiss="modal"><img style="width: 20px;margin-right: 5px" src="images/paintbrush.png">Ustalar Klubu </a>
+       
+<script type="text/javascript">
+$("#buy").click(function () {
+    var a = 4;
+    if (a == 5) {
+        alert("if");
+        $('#myModal').modal('show');
+    } else {
+        alert("else");
+        $('#myModal').modal('hide');
+    }
+});
+</script>
+           
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+               <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg">
     <div class="modal-content display-grid">
     	<div class="modal-header">
@@ -1163,26 +1184,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-$("#buy").click(function () {
-    var a = 4;
-    if (a == 5) {
-        alert("if");
-        $('#myModal').modal('show');
-    } else {
-        alert("else");
-        $('#myModal').modal('hide');
-    }
-});
-</script>
-           
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
   </header>
   
   <!-- Start main-content -->
