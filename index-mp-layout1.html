@@ -1119,54 +1119,50 @@
                   </ul>
                 </li>
                 <li>
-                  <a class="top-nav-cart-box"><img style="width: 20px" src="images/paintbrush.png"> </a>
-                  <ul class="dropdown">
-                    <li>
-                      <!-- dropdown cart -->
-                      <div class="dropdown-cart">
-                       
-                         <!-- <a href="javascript:void(0)"><img alt="logo" src="http://fortisgroup.az/new/file/logo.png"></a> -->
-    <h3>Ustalar klubu</h4>
-    <div class="side-panel-nav mt-30">
-      <div class="widget no-border">
-   <!--      <nav>
-          <ul class="nav nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>+
-            <li><a class="tree-toggler nav-header">Pages <i class="fa fa-angle-down"></i></a>
-              <ul class="nav nav-list tree">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>    --> 
-         <div class="form-group col-md-12">
+                  <a href="#"  type="button" class="btn btn-flat buttonStyle" data-toggle="modal" data-target=".bs-example-modal-lg" data-dismiss="modal"><img style="width: 20px;margin-right: 5px" src="images/paintbrush.png">Ustalar Klubu </a>
+                  <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content display-grid">
+    	<div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      <h4 class="modal-title" id="myModalLabel2">Ustalar klubu</h4>
+                    </div>
+                <div class="dropdown-cart">
+   					 <!-- <h3></h3> -->
+    				<div class="side-panel-nav mt-30">
+      				<div class="widget no-border">
+         			<div class="form-group col-md-12">
                       <label for="form_choose_username">Adınız</label>
                       <input id="form_choose_username" name="form_choose_username" class="form-control" type="text">
                     </div>
-                  </div>
-                    <div class="form-group col-md-12">
+                 	 </div>
+                    	<div class="form-group col-md-12">
                       <label for="form_choose_password">Soyadınız</label>
                       <input id="form_choose_password" name="form_choose_password" class="form-control" type="text">
-                    </div>
-                    <div class="form-group col-md-12">
+                    	</div>
+                    	<div class="form-group col-md-12">
                       <label>Telefon</label>
                       <input id="form_re_enter_password" name="phone_number"  class="form-control" type="number">
                        <button style="margin-top: 15px" type="submit" class="btn btn-default">Göndər</button>
-                    </div>    
-   
+                    	</div>    
+   					 	</div>                 
+                      </div>                  
     </div>
-                      <!--   <div class="cart-btn text-right">
-                            <a class="btn btn-theme-colored btn-xs" href="shop-cart.html"> View cart</a>
-                            <a class="btn btn-dark btn-xs" href="#"> Checkout</a>
-                        </div> -->
-                      </div>
-                      <!-- dropdown cart ends -->
-                    </li>
-                  </ul>
+  </div>
+</div>
+<script type="text/javascript">
+$("#buy").click(function () {
+    var a = 4;
+    if (a == 5) {
+        alert("if");
+        $('#myModal').modal('show');
+    } else {
+        alert("else");
+        $('#myModal').modal('hide');
+    }
+});
+</script>
+           
                 </li>
               </ul>
             </div>
@@ -1602,7 +1598,7 @@
           <div class="row">
             <div class="col-md-12">
               <!-- <h5 class="mt-0 mb-0 text-uppercase">Rehearses</h5> -->
-              <h2 class="mt-0 page-title"><i class="fa fa-legal"></i>Məhsullar</h2>
+              <h2 class="mt-0 page-title"></i>Məhsullar</h2>
               <!-- <p>Maecenas nec efficitur felis. Nulla egestas lacus sit
                 amet lectus tincidunt condimentum.</p> -->
             </div>
@@ -1611,9 +1607,9 @@
 <!--     <h3 style="    text-align: center;
     margin-top: 105px;
     margin-bottom: 0px;">Məhsullar</h3> -->
-    <section style=" margin-bottom: 0px! important"  class="wow slideInUp " data-wow-duration="1.5s" data-wow-offset="10" >
-  <div class="carousel-wrap">
-  <div class="owl-carousel">
+    <section style=" margin-bottom: 0px! important"  class="wow slideInUp container" data-wow-duration="1.5s" data-wow-offset="10" >
+  <div class="carousel-wrap ">
+  <div class="owl-carousel ">
     <div class="item"><img src="http://fortisgroup.az/new/file/products_type/ic10.png"><p style="    text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;">ASTARLAR</p></div>
@@ -1721,7 +1717,7 @@
           <div class="row">
             <div class="col-md-12">
               <!-- <h5 class="mt-0 mb-0 text-uppercase">Rehearses</h5> -->
-              <h2 class="mt-0 page-title"><i class="fa fa-legal"></i>Brendlər</h2>
+              <h2 class="mt-0 page-title"></i>Brendlər</h2>
          <!--      <p>Maecenas nec efficitur felis. Nulla egestas lacus sit
                 amet lectus tincidunt condimentum.</p> -->
             </div>
@@ -1827,8 +1823,8 @@
                       <div class="flexslider">
                         <ul class="slides">
                           <li><a href="http://fortisgroup.az/new/file/products_brend/flora_boya.png" title="Portfolio Gallery - Photo 1"><img src="http://fortisgroup.az/new/file/products_brend/flora_boya.png" alt=""></a></li>
-                          <li><a href="images/portfolio/2.jpg" title="Portfolio Gallery - Photo 2"><img src="images/portfolio/2.jpg" alt=""></a></li>
-                          <li><a href="images/portfolio/3.jpg" title="Portfolio Gallery - Photo 3"><img src="images/portfolio/3.jpg" alt=""></a></li>
+                          <li><a href="images/portfolio/2.jpg" title="Portfolio Gallery - Photo 2"><img src="https://www.bloggingpro.com/wp-content/uploads/2014/12/iStock_000021094608_Small.jpg" alt=""></a></li>
+                          <li><a href="images/portfolio/3.jpg" title="Portfolio Gallery - Photo 3"><img src="http://editorial-ink.us/img/132312/PF-diy_1372416c.jpg" alt=""></a></li>
                         </ul>
                       </div>
                     </div>
@@ -1869,8 +1865,8 @@
                       <div class="flexslider">
                         <ul class="slides">
                           <li><a href="http://fortisgroup.az/new/file/products_brend/giper.png" title="Portfolio Gallery - Photo 1"><img src="http://fortisgroup.az/new/file/products_brend/giper.png" alt=""></a></li>
-                          <li><a href="images/portfolio/5.jpg" title="Portfolio Gallery - Photo 2"><img src="images/portfolio/5.jpg" alt=""></a></li>
-                          <li><a href="images/portfolio/4.jpg" title="Portfolio Gallery - Photo 3"><img src="images/portfolio/4.jpg" alt=""></a></li>
+                          <li><a href="images/portfolio/5.jpg" title="Portfolio Gallery - Photo 2"><img src="https://www.bloggingpro.com/wp-content/uploads/2014/12/iStock_000021094608_Small.jpg" alt=""></a></li>
+                          <li><a href="images/portfolio/4.jpg" title="Portfolio Gallery - Photo 3"><img src="http://editorial-ink.us/img/132312/PF-diy_1372416c.jpg" alt=""></a></li>
                         </ul>
                       </div>
                     </div>
@@ -1964,32 +1960,107 @@
       <a id="next"><i style="font-size: 30px"  class="fa fa-angle-right"></i></a>
     </div>
     </div> -->
-    <section class="divider parallax layer-overlay overlay-deep" data-stellar-background-ratio="0.5" data-bg-img="images/bg/bg2.jpg">
+    <section class="divider layer-overlay overlay-deep mt-80" data-stellar-background-ratio="0.5" data-bg-img="images/bg/bg2.jpg">
       <div class="container">
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-12">
-              <h3 class="mt-0">WBiz müştərilərimiz üçün mübarizə aparırıq</h3>
-              <h2>Sadəcə, fövqəladə xidməti üçün <span class="text-theme-colored">(01) 234 5678</span>yığın</h2>
+              <h3 class="mt-0 white">Biz müştərilərimiz üçün mübarizə aparırıq</h3>
+              <h2 class="white">Sadəcə, fövqəladə xidməti üçün <span class="text-theme">(01) 234 5678 </span> yığın</h2>
             </div>
           </div>
         </div>
       </div>
     </section>
   </section>
+
      <section id="news">
       <div class="container">
          <div class="section-title title-border icon-bg container pt-20 mt-30 pb-20 mb-80" >
           <div class="row">
             <div class="col-md-12">
               <!-- <h5 class="mt-0 mb-0 text-uppercase">Rehearses</h5> -->
-              <h2 class="mt-0 page-title"><i class="fa fa-legal"></i>Xəbərlər</h2>
+              <h2 class="mt-0 page-title"></i>Xəbərlər</h2>
               <!-- <p>Maecenas nec efficitur felis. Nulla egestas lacus sit
                 amet lectus tincidunt condimentum.</p> -->
             </div>
           </div>
         </div>
         <div class="section-content">
+          <div class="row multi-row-clearfix">
+            <div class="blog-posts">
+		<div class="col-xs-12 col-sm-12 col-md-4 wow fadeInUp" style="visibility: visible;">
+			<article class="post clearfix box-hover-effect effect1 maxwidth600 mb-sm-30">
+			  <div class="entry-header">
+				<a href="/az/material/22/">
+				<div class="post-thumb thumb"> 
+				  <img class="img-responsive img-fullwidth" src="http://fortisgroup.az/new/file/img/epoxy-yer-kaplama.jpg"> 
+				</div>
+				</a>
+			  </div>
+			  <div class="entry-content border-1px p-20">
+				<div class="entry-title pt-0">
+				  <h5 class="mt-0 pt-0"><a href="/az/material/22/">FORTIS GROUP yeni korporativ veb saytını istifadəyə verdi</a></h5>
+				</div>
+				<ul class="entry-meta list-inline font-12">
+				  <li><i class="fa fa-calendar mr-5 text-theme-colored"></i>03.11.2018</li>
+				  <li><i class="fa fa-eye mr-5 text-theme-colored"></i>76</li>                      
+				</ul>
+				<p class="mb-30 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. <a href="http://fortisgroup.az/new/file/img/epoxy-yer-kaplama.jpg">[...]</a></p>
+				<div class="clearfix"></div>
+			  </div>
+			</article>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 wow fadeInUp" style="visibility: visible;">
+			<article class="post clearfix box-hover-effect effect1 maxwidth600 mb-sm-30">
+			  <div class="entry-header">
+				<a href="/az/material/21/">
+				<div class="post-thumb thumb"> 
+				  <img class="img-responsive img-fullwidth" src="http://fortisgroup.az/new/file/img/epoxy-yer-kaplama.jpg"> 
+				</div>
+				</a>
+			  </div>
+			  <div class="entry-content border-1px p-20">
+				<div class="entry-title pt-0">
+				  <h5 class="mt-0 pt-0"><a href="/az/material/21/">FORTIS GROUP yeni korporativ veb saytını istifadəyə verdi</a></h5>
+				</div>
+				<ul class="entry-meta list-inline font-12">
+				  <li><i class="fa fa-calendar mr-5 text-theme-colored"></i>03.11.2018</li>
+				  <li><i class="fa fa-eye mr-5 text-theme-colored"></i>36</li>                      
+				</ul>
+				<p class="mb-30 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. <a href="http://fortisgroup.az/new/file/img/epoxy-yer-kaplama.jpg">[...]</a></p>
+				<div class="clearfix"></div>
+			  </div>
+			</article>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 wow fadeInUp" style="visibility: visible;">
+			<article class="post clearfix box-hover-effect effect1 maxwidth600 mb-sm-30">
+			  <div class="entry-header">
+				<a href="/az/material/20/">
+				<div class="post-thumb thumb"> 
+				  <img class="img-responsive img-fullwidth" src="http://fortisgroup.az/new/file/img/epoxy-yer-kaplama.jpg"> 
+				</div>
+				</a>
+			  </div>
+			  <div class="entry-content border-1px p-20">
+				<div class="entry-title pt-0">
+				  <h5 class="mt-0 pt-0"><a href="/az/material/20/"> FORTIS GROUP yeni korporativ veb saytını istifadəyə verdi</a></h5>
+				</div>
+				<ul class="entry-meta list-inline font-12">
+				  <li><i class="fa fa-calendar mr-5 text-theme-colored"></i>03.11.2018</li>
+				  <li><i class="fa fa-eye mr-5 text-theme-colored"></i>34</li>                      
+				</ul>
+				<p class="mb-30 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. <a href="/az/material/20/">[...]</a></p>
+				<div class="clearfix"></div>
+			  </div>
+			</article>
+		</div>	
+            </div>
+          </div>
+        </div>
+       <!--  <div class="section-content">
           <div class="row multi-row-clearfix">
             <div class="blog-posts">
               <div class="col-xs-12 col-sm-12 col-md-4">
@@ -2075,7 +2146,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
    
@@ -2676,26 +2747,26 @@ $('#next').click(function() {
     <div class="container pb-10">
       <div class="row">
         <div class="col-sm-6 col-md-3">
-          <div class="widget dark"> <img alt="" src="http://fortisgroup.az/new/file/logo.png">
-            <p class="font-12 mt-10 mb-10">Azərbaycanın inşaat materialları istehsalı sektorunda qabaqcıl şirkətlərdən biri olan “FORTİS GROUP” MMC 2004-cü ildən fəaliyyət göstərir və fəaliyyətini təkcə Azərbaycanda deyil həmçinin yaxın region ölkələrindədə uğurla həyata keçirir. </p>
-            <a class="btn btn-default btn-transparent btn-xs btn-flat mt-5" href="#">Ətraflı</a>
+          <div class="widget "> <img alt="" src="http://fortisgroup.az/new/file/logo.png">
+            <p class="font-12 mt-10 mb-10 text-white">Azərbaycanın inşaat materialları istehsalı sektorunda qabaqcıl şirkətlərdən biri olan “FORTİS GROUP” MMC 2004-cü ildən fəaliyyət göstərir və fəaliyyətini təkcə Azərbaycanda deyil həmçinin yaxın region ölkələrindədə uğurla həyata keçirir. </p>
+            <a class="btn btn-default btn-transparent btn-xs btn-flat mt-5 text-white" href="#">Ətraflı</a>
           </div>
       <ul class="social-icons icon-sm icon-bordered icon-circled clearfix mt-20">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-fa fa-linkedin text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance text-white"></i></a></li>
             </ul>
         </div>
       
       <div class="col-sm-6 wow fadeInUp" style="visibility: visible;">
 			  <div class="widget dark" style="text-align: center;">
 				<center><h5 class="widget-title line-bottom" style="max-width: 133px;">FORTIS GROUP</h5></center>
-				<p>
-				<i class="fa fa-map-marker mr-5"></i> AZ 1025, Bakı s. XƏTAİ r-nu, Nobel pr.,ev.23<br>
-				<i class="fa fa-phone mr-5"></i> +994 12 598 92 57<br>
-				<i class="fa fa-envelope-o mr-5"></i> office@fortis.az
+				<p class="text-white">
+				<i class="fa fa-map-marker mr-5 text-white"></i> AZ 1025, Bakı s. XƏTAİ r-nu, Nobel pr.,ev.23<br>
+				<i class="fa fa-phone mr-5 text-white"></i> +994 12 598 92 57<br>
+				<i class="fa fa-envelope-o mr-5 text-white"></i> office@fortis.az
 			  </p></div>
 			</div>
         <div class="col-sm-6 col-md-3">
@@ -2703,23 +2774,23 @@ $('#next').click(function() {
             <h5 class="widget-title line-bottom">AÇILIŞ SAATI</h5>
             <div class="opening-hours">
               <ul class="list-border">
-                <li class="clearfix"> <span><i class="fa fa-clock-o mr-5"></i> Bazar e.- Çərşənbə A. :</span>
-                  <div class="value pull-right"> 9.00 am - 10.00 pm </div>
+                <li class="clearfix"> <span class="text-white"><i class="fa fa-clock-o mr-5 text-white"></i> Bazar e.- Çərşənbə A. :</span>
+                  <div class="value pull-right text-white"> 9.00 am - 10.00 pm </div>
                 </li>
-                <li class="clearfix"> <span><i class="fa fa-clock-o mr-5"></i>  Çərşənbə günü :  </span>
-                  <div class="value pull-right"> 10.00 am - 8.00 pm </div>
+                <li class="clearfix"> <span class="text-white"><i class="fa fa-clock-o mr-5 text-white"></i>  Çərşənbə günü :  </span>
+                  <div class="value pull-right text-white"> 10.00 am - 8.00 pm </div>
                 </li>
-                <li class="clearfix"> <span class="text-theme-colored"><i class="fa fa-clock-o mr-5"></i>  Cümə axşamı : </span>
-                  <div class="value pull-right text-theme-colored"> 10.00 am - 8.00 pm </div>
+                <li class="clearfix"> <span class="text-theme text-white"><i class="fa fa-clock-o mr-5"></i>  Cümə axşamı : </span>
+                  <div class="value pull-right text-theme text-white"> 10.00 am - 8.00 pm </div>
                 </li>
-                <li class="clearfix"> <span><i class="fa fa-clock-o mr-5"></i> Cümə günü :</span>
-                  <div class="value pull-right"> 10.00 am - 6.00 pm </div>
+                <li class="clearfix"> <span class="text-white"><i class="fa fa-clock-o mr-5 text-white"></i> Cümə günü :</span>
+                  <div class="value pull-right text-white"> 10.00 am - 6.00 pm </div>
                 </li>
-                <li class="clearfix"> <span><i class="fa fa-clock-o mr-5"></i>  Şənbə günü : </span>
-                  <div class="value pull-right"> 2.00 pm - 8.00 pm </div>
+                <li class="clearfix"> <span class="text-white"><i class="fa fa-clock-o mr-5 text-white"></i>  Şənbə günü : </span>
+                  <div class="value pull-right text-white"> 2.00 pm - 8.00 pm </div>
                 </li>
-                <li class="clearfix"> <span><i class="fa fa-clock-o mr-5"></i>  Bazar günü :</span>
-                  <div class="value pull-right"> <span class="text-highlight bg-theme-colored text-black-333">Bağlı</span>  </div>
+                <li class="clearfix"> <span class="text-white"><i class="fa fa-clock-o mr-5 text-white"></i>  Bazar günü :</span>
+                  <div class="value pull-right"> <span class="text-highlight bg-theme text-white">Bağlı</span>  </div>
                 </li>
               </ul>
             </div>
@@ -2730,7 +2801,7 @@ $('#next').click(function() {
     <div class="container-fluid bg-black-222 p-20">
       <div class="row text-center">
         <div class="col-md-12">
-          <p class="font-11 m-0">Copyright © Fortis Group 2018 Bütün hüquqlar qorunur.</p>
+          <p class="font-11 m-0 text-white">Copyright © Fortis Group 2018 Bütün hüquqlar qorunur.</p>
         </div>
       </div>
     </div>

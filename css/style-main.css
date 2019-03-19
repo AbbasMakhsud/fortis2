@@ -111,7 +111,7 @@ body {
   line-height: 1.7;
   color: #777777;
   font-size: 13px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #fff;
   background-attachment: fixed;
 }
@@ -170,7 +170,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 600;
   line-height: 1.42857143;
   color: #333333;
@@ -241,10 +241,10 @@ form {
 }
 /* -------- Custom Font Family ---------- */
 .font-raleway {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 .font-opensans {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 .font-Playfair {
   font-family: 'Playfair Display', serif;
@@ -1401,13 +1401,13 @@ section > .container-fluid {
   z-index: 0;
 }
 .layer-overlay.overlay-light::before {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(80, 80, 80, 0.8);
 }
 .layer-overlay.overlay-lighter::before {
   background-color: rgba(255, 255, 255, 0.7);
 }
 .layer-overlay.overlay-deep::before {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color:rgba(80, 80, 80, 0.8);
 }
 .layer-overlay.overlay-dark::before {
   background-color: rgba(17, 17, 17, 0.85);
@@ -1856,7 +1856,7 @@ section > .container-fluid {
 .menu-full-page #fullpage-nav li a {
   color: #111;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   text-decoration: none;
   font-weight: 400;
   text-transform: uppercase;
@@ -3477,7 +3477,7 @@ textarea {
   background: none repeat scroll 0 0 transparent;
   border: 1px solid #ccc;
   border-radius: 3px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   height: 18px;
   left: 2.8571em;
   line-height: 1;
@@ -3783,7 +3783,7 @@ table.no-border td {
   padding-bottom: 30px;
 }
 .single-post article .entry-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial", sans-serif;
   padding: 15px 0 0;
   text-transform: capitalize;
 }
@@ -3825,7 +3825,7 @@ table.no-border td {
   padding-left: 0;
 }
 .single-post .comment-list h6 {
-  font-family: helvetica;
+  font-family: Arial;
 }
 .single-post .comment-list li {
   list-style: none;
@@ -4531,8 +4531,8 @@ blockquote p {
   background-position: center center;
 }
 .divider .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /*padding-top: 60px;
+  padding-bottom: 60px;*/
 }
 .divider .container.small-padding {
   padding-top: 30px;
@@ -5545,7 +5545,7 @@ blockquote p {
 }
 .nav-tabs > li > a {
   border-radius: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 12px;
   color: #555555;
   padding: 12px 20px;
@@ -6656,4 +6656,18 @@ blockquote p {
 
 .toMargin{
   margin-top: 100px;margin-bottom: 100px
+}
+
+.display-grid{
+  display: grid;
+}
+
+.white{
+  color: white
+}
+
+
+.buttonStyle{
+      border: 1px solid;
+    border-radius: 5px;
 }
