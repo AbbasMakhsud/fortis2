@@ -6675,3 +6675,13 @@ blockquote p {
 .searchForm{
   margin: 0
 }
+
+@media (max-width: 576px){
+  .toMobile{
+    display: grid;
+  }
+  .to-margin{
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
+}
