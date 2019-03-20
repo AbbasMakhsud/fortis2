@@ -6692,6 +6692,8 @@ margin-top: 11px !important;
 .overflow{
       -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
     overflow: hidden;
     line-height: 23px;
     display: -webkit-box;
