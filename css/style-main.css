@@ -6265,8 +6265,8 @@ blockquote p {
   background-color: #fff;
   border-left: 1px solid #c0c0c0;
   border: none;
-  height: 44px;
-  width: 50px;
+  /*height: 44px;*/
+  /*width: 50px;*/
   text-indent: -999px;
 }
 .search-form-wrapper.form-absolute form {
