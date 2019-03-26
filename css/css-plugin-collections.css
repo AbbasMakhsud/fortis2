@@ -1099,7 +1099,7 @@ screen and (max-height: 300px) {
 	}
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 992px) {
 	.mfp-arrow {
 		-webkit-transform: scale(0.75);
 		transform: scale(0.75);
@@ -7065,7 +7065,7 @@ License: http://codecanyon.net/licenses
 /* 2 - BRAND======================================*/
 
 .menuzord-brand {
-	margin: 18px 30px 0 0;
+	margin: 18px 12px 0 0;
 	float: left;
 	color: #666;
 	text-decoration: none;
@@ -7513,7 +7513,7 @@ License: http://codecanyon.net/licenses
 
 /* 14 - MOBILE MODE (RESPONSIVE MODE)======================================*/
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
 	/* Responsive menu container */
 	.menuzord-responsive.menuzord {
 		padding: 0;
