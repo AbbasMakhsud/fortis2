@@ -1794,4 +1794,8 @@
     //call function before document ready
     THEMEMASCOT.initialize.TM_preLoaderClickDisable();
 
+
+
+
 })(jQuery);
+

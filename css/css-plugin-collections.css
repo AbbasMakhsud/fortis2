@@ -7517,6 +7517,7 @@ License: http://codecanyon.net/licenses
 	/* Responsive menu container */
 	.menuzord-responsive.menuzord {
 		padding: 0;
+
 	}
 	/* Brand */
 	.menuzord-responsive .menuzord-brand {
@@ -7537,6 +7538,7 @@ License: http://codecanyon.net/licenses
 	.menuzord-responsive .menuzord-menu.scrollable {
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
+		    margin-bottom: 11px;
 	}
 	.menuzord-responsive .menuzord-menu.scrollable>.scrollable-fix {
 		display: block;
