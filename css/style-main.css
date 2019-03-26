@@ -2584,6 +2584,7 @@ form .error {
 }
 .portfolio-gallery.grid-3 .portfolio-item {
   width: 33.333%;
+  padding: 10px
 }
 .portfolio-gallery.grid-3 .portfolio-item.wide {
   width: 66.6667%;
@@ -6771,7 +6772,7 @@ margin-top: 11px !important;
 
 .theSearchDiv{
   padding: 4px;
-  margin-top: 15px !important;
+  margin-top: 18px !important;
   background: #fafafa !important;
   border-radius: 3px !important
 }
