@@ -704,7 +704,7 @@ fieldset[disabled] .btn-theme-colored.focus {
 }
 
 .menuzord.red .menuzord-menu > li.active > a, .menuzord.red .menuzord-menu > li:hover > a, .menuzord.red .menuzord-menu ul.dropdown li:hover > a{
-  background-color: #188e50 !important
+  /*background-color: #188e50 !important*/
 }
 
 .button{
