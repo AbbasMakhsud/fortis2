@@ -267,7 +267,7 @@ form {
   color: #fff;
 }
 .breadcrumb.white li a {
-  color: #808080;
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .breadcrumb.text-right {
@@ -4853,7 +4853,7 @@ blockquote p {
 */
 .icon-box {
   margin-bottom: 60px;
-  padding: 40px 17px;
+  padding: 40px 0px;
 }
 .icon-box .icon {
   display: inline-block;
