@@ -3400,7 +3400,7 @@ textarea {
   margin: 0 0 15px;
   text-align: center;
   width: 100%;
-  background: #ffffff;
+  background: #fafafa;
   -webkit-transition: 400ms;
   -o-transition: 400ms;
   transition: 400ms;
@@ -6969,3 +6969,737 @@ margin-top: 11px !important;
 	color: #213F99;
 	border: 1px solid #213F99;
 	}
+
+
+	.gallery-isotope {
+  /*gutter*/
+/*   by default 4 grids 
+  portfolio 2 grids
+  portfolio 2 grids
+  portfolio 3 grids
+  portfolio 4 grids
+  portfolio 5 grid
+  portfolio 6 grids
+  portfolio 7 grids
+  portfolio 8 grids
+  portfolio 9 grids
+  portfolio 10 grids*/
+}
+.gallery-isotope.gutter .gallery-item {
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.gallery-isotope.gutter-small .gallery-item {
+  padding-right: 2px;
+  padding-bottom: 2px;
+}
+.gallery-isotope.gutter-30 .gallery-item {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.gallery-isotope.gutter-40 .gallery-item {
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+.gallery-isotope.gutter-50 .gallery-item {
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+.gallery-isotope.gutter-60 .gallery-item {
+  padding-right: 60px;
+  padding-bottom: 60px;
+}
+.gallery-isotope .gallery-item {
+  width: 25%;
+}
+.gallery-isotope .gallery-item.wide {
+  width: 50%;
+}
+.gallery-isotope.grid-1 .gallery-item {
+  width: 100%;
+}
+.gallery-isotope.grid-1 .gallery-item.wide {
+  width: 100%;
+}
+.gallery-isotope.grid-2 .gallery-item {
+  width: 50%;
+}
+.gallery-isotope.grid-2 .gallery-item.wide {
+  width: 100%;
+}
+.gallery-isotope.grid-3 .gallery-item {
+  width: 33.333%;
+}
+.gallery-isotope.grid-3 .gallery-item.wide {
+  width: 66.6667%;
+}
+.gallery-isotope.grid-4 .gallery-item {
+  width: 25%;
+}
+.gallery-isotope.grid-4 .gallery-item.wide {
+  width: 50%;
+}
+.gallery-isotope.grid-5 .gallery-item {
+  width: 20%;
+}
+.gallery-isotope.grid-5 .gallery-item.wide {
+  width: 40%;
+}
+.gallery-isotope.grid-6 .gallery-item {
+  width: 16.666666667%;
+}
+.gallery-isotope.grid-6 .gallery-item.wide {
+  width: 33.333%;
+}
+.gallery-isotope.grid-7 .gallery-item {
+  width: 14.2857143%;
+}
+.gallery-isotope.grid-7 .gallery-item.wide {
+  width: 28.5714286%;
+}
+.gallery-isotope.grid-8 .gallery-item {
+  width: 12.5%;
+}
+.gallery-isotope.grid-8 .gallery-item.wide {
+  width: 25%;
+}
+.gallery-isotope.grid-9 .gallery-item {
+  width: 11.11%;
+}
+.gallery-isotope.grid-9 .gallery-item.wide {
+  width: 22.22%;
+}
+.gallery-isotope.grid-10 .gallery-item {
+  width: 10%;
+}
+.gallery-isotope.grid-10 .gallery-item.wide {
+  width: 20%;
+}
+/* -------- Portfolio Isotop Item Media Query ---------- */
+@media only screen and (max-width: 991px) {
+  .gallery-isotope .gallery-item {
+    width: 33.333% !important;
+  }
+  .gallery-isotope .gallery-item.wide {
+    width: 66.6667% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gallery-isotope .gallery-item {
+    width: 50% !important;
+  }
+  .gallery-isotope .gallery-item.wide {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .gallery-isotope .gallery-item {
+    width: 100% !important;
+  }
+  .gallery-isotope .gallery-item.wide {
+    width: 100% !important;
+  }
+}
+/* -------- Portfolio Isotop Overlay Effect ---------- */
+.gallery-isotope .gallery-item {
+  overflow: hidden;
+}
+.gallery-isotope .gallery-item .thumb {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-isotope .gallery-item .hover-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  background: none!important;
+  color: transparent!important;
+  z-index: 11;
+}
+.gallery-isotope .gallery-item .overlay-shade {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  background-color: #333;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.gallery-isotope .gallery-item:hover .overlay-shade {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.gallery-isotope .gallery-item .icons-holder {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  display: inline-block;
+  width: auto;
+  height: 36px;
+  vertical-align: middle;
+  z-index: 13;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-isotope .gallery-item .icons-holder .icons-holder-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -18px 0 0 -50%;
+}
+.gallery-isotope .gallery-item .icons-holder .icons-holder-inner a {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-isotope .gallery-item:hover .icons-holder {
+  top: 50%;
+}
+.gallery-isotope .gallery-item:hover .icons-holder .icons-holder-inner a {
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+.gallery-isotope .gallery-item .portfolio-description {
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+}
+.gallery-isotope .gallery-item .portfolio-description .title {
+  margin: 0;
+}
+.gallery-isotope .gallery-item .portfolio-description .title a {
+  color: #333333;
+}
+.gallery-isotope .gallery-item .text-holder {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 25px 30px 60px;
+  position: absolute;
+  top: 0;
+  -webkit-transition: opacity 0.3s ease-in-out 0s;
+  -o-transition: opacity 0.3s ease-in-out 0s;
+  transition: opacity 0.3s ease-in-out 0s;
+  width: 100%;
+  z-index: 13;
+}
+.gallery-isotope .gallery-item .text-holder .title {
+  color: #fff;
+}
+.gallery-isotope .gallery-item:hover .text-holder {
+  opacity: 1;
+}
+.gallery-isotope .flex-control-nav {
+  z-index: 111;
+}
+
+.work-gallery {
+  margin: 0 auto 30px;
+  max-width: 400px;
+}
+.work-gallery .gallery-thumb {
+  overflow: hidden;
+  position: relative;
+}
+.work-gallery .gallery-bottom-part {
+  background-color: #f7f7f7;
+  padding: 10px 10px 16px;
+}
+.work-gallery .gallery-thumb .gallery-overlay {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  transform: scale(0.2);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  width: 100%;
+}
+.work-gallery:hover .gallery-thumb .gallery-overlay {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.gallery-contect {
+  height: 100%;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  transform: scale(0.2);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  width: 100%;
+}
+.work-gallery:hover .gallery-thumb .gallery-contect {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.work-gallery .gallery-thumb .styled-icons a {
+  border-color: #fff;
+  height: 36px;
+  width: 36px;
+  line-height: 34px;
+}
+.work-gallery .gallery-thumb .styled-icons a i {
+  color: #fff;
+}
+.work-gallery .gallery-thumb .styled-icons a:hover i {
+  color: #fff;
+}
+.work-gallery .gallery-thumb .styled-icons a:hover {
+  color: #fff;
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+}
+.work-gallery .gallery-thumb .gallery-contect .styled-icons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 45%;
+}
+.work-gallery:hover .gallery-bottom-part {
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+.work-gallery:hover .gallery-bottom-part .title {
+  color: #fff;
+}
+.work-gallery:hover .gallery-bottom-part .sub-title a {
+  color: #fff;
+}
+
+
+.box-hover-effect {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+.box-hover-effect img {
+  position: relative;
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-hover-effect .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-hover-effect .overlay::before,
+.box-hover-effect .overlay::after {
+  pointer-events: none;
+}
+.box-hover-effect .overlay .details {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-hover-effect .overlay .title {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-hover-effect .overlay .para {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-hover-effect .overlay .entry-meta {
+  bottom: 10px;
+  font-size: 70%;
+  opacity: 0;
+  position: absolute;
+  width: 89%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-hover-effect .overlay .entry-meta.top {
+  top: 10px;
+}
+.box-hover-effect .overlay .entry-meta i {
+  color: #fff;
+}
+.box-hover-effect .overlay .icons {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-hover-effect:hover .overlay {
+  background: rgba(0, 0, 0, 0.85);
+}
+.box-hover-effect:hover .overlay.white {
+  background: rgba(255, 255, 255, 0.75);
+}
+.box-hover-effect:hover .overlay.black {
+  background: rgba(0, 0, 0, 0.85);
+}
+.box-hover-effect:hover .overlay .entry-meta {
+  opacity: 1;
+}
+.box-hover-effect:hover .overlay .icons {
+  opacity: 1;
+}
+.box-hover-effect:hover .overlay .icons i {
+  color: #fff;
+}
+.box-hover-effect:hover .overlay .icons.twin i {
+  padding: 10px;
+}
+.box-hover-effect:hover .overlay .icons.bordered i {
+  border: 1px solid #fff;
+}
+.box-hover-effect:hover .overlay .icons.bordered i.text-black {
+  border-color: #000;
+}
+.shadow-overlay {
+  background-image: url("../images/shadow-overlay.png");
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  bottom: 0;
+  color: #fff;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+/* Individual effects */
+/* -------- effect1 ---------- */
+.box-hover-effect.effect1 .thumb {
+  position: relative;
+  overflow: hidden;
+}
+.box-hover-effect.effect1 .thumb:before {
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 0;
+  content: "";
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+ /* transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  transform: rotate(-70deg);*/
+  width: 200%;
+  z-index: 1;
+}
+.box-hover-effect.effect1:hover .thumb:before {
+  opacity: 1;
+}
+.box-hover-effect.effect1:hover .thumb img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* -------- effect2 ---------- */
+.box-hover-effect.effect2 .thumb {
+  position: relative;
+  overflow: hidden;
+}
+.box-hover-effect.effect2 .overlay .overlay-details {
+  opacity: 0;
+  -webkit-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.box-hover-effect.effect2:hover .overlay-details {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.box-hover-effect.effect2:hover .details {
+  opacity: 0;
+}
+.box-hover-effect.effect2:hover img {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* -------- effect3 ---------- */
+.box-hover-effect.effect3 .overlay {
+  position: relative;
+}
+.box-hover-effect.effect3 .thumb {
+  position: relative;
+}
+.box-hover-effect.effect3 .thumb:after {
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+}
+.box-hover-effect.effect3 .thumb:before {
+  background-color: rgba(255, 255, 255, 0.15);
+  left: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+  z-index: 1;
+}
+.box-hover-effect.effect3:hover .thumb:before,
+.box-hover-effect.effect3:hover .thumb:after {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+/* -------- Custom Theme Style ---------- */
+.box-hover-effect.effect2 .overlay.white .overlay-details p {
+  color: #777777;
+}
+/*
+
+/* Layer-overlay */
+
+
+.service-block .thumb .price,
+.service-block .thumb .desc,
+.team-block .team-thumb .team-overlay,
+.team-block .team-thumb .styled-icons,
+.work-gallery .gallery-thumb .gallery-overlay {
+  background: rgba(31, 56, 107, 0.7);
+}
+.team-block .team-thumb .team-overlay::after {
+  border-color: rgba(31, 56, 107, 0.75) transparent transparent rgba(31, 56, 107, 0.75);
+}
+.team-block .team-thumb .styled-icons::after {
+  border-color: transparent rgba(31, 56, 107, 0.75) rgba(31, 56, 107, 0.75) transparent;
+}
+
+
+.overlay-theme-colored-1:before {
+  background-color: rgba(31, 56, 107, 0.1) !important;
+}
+.overlay-theme-colored-2:before {
+  background-color: rgba(31, 56, 107, 0.2) !important;
+}
+.overlay-theme-colored-3:before {
+  background-color: rgba(31, 56, 107, 0.3) !important;
+}
+.overlay-theme-colored-4:before {
+  background-color: rgba(31, 56, 107, 0.4) !important;
+}
+.overlay-theme-colored-5:before {
+  background-color: rgba(31, 56, 107, 0.5) !important;
+}
+.overlay-theme-colored-6:before {
+  background-color: rgba(31, 56, 107, 0.6) !important;
+}
+.overlay-theme-colored-7:before {
+  background-color: rgba(31, 56, 107, 0.7) !important;
+}
+.overlay-theme-colored-8:before {
+  background-color: rgba(31, 56, 107, 0.8) !important;
+}
+.overlay-theme-colored-9:before {
+  background-color: rgba(31, 56, 107, 0.9) !important;
+}
+
+.bg-hover-theme-colored:hover {
+  background: #de0827 !important;
+  border-color: #de0827 !important;
+  color: #fff !important;
+}
+.bg-hover-theme-colored:hover h1,
+.bg-hover-theme-colored:hover h2,
+.bg-hover-theme-colored:hover h3,
+.bg-hover-theme-colored:hover h4,
+.bg-hover-theme-colored:hover h5,
+.bg-hover-theme-colored:hover h6,
+.bg-hover-theme-colored:hover p,
+.bg-hover-theme-colored:hover a,
+.bg-hover-theme-colored:hover i {
+  color: #fff !important;
+}
+.hover-text-theme-color-2:hover {
+  color: #de0827;
+}
+
+.team-block .team-thumb .styled-icons a:hover,
+.work-gallery .gallery-thumb .styled-icons a:hover,
+.work-gallery:hover .gallery-bottom-part,
+.line-bottom-theme-colored-2:after,
+.panel-group .panel-title a.active::after {
+  background: #de0827;
+}
+
+.styled-icons a {
+  color: #333333;
+  font-size: 18px;
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+  float: left;
+  margin: 5px 7px 5px 0;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.styled-icons a:hover {
+  color: #666666;
+}
+.styled-icons.icon-gray a {
+  background-color: #eeeeee;
+  color: #555555;
+  display: block;
+  font-size: 18px;
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+}
+.styled-icons.icon-gray a:hover {
+  color: #bbbbbb;
+}
+.styled-icons.icon-gray.icon-bordered a {
+  background-color: transparent;
+  border: 2px solid #eeeeee;
+}
+.styled-icons.icon-gray.icon-bordered a:hover {
+  border: 2px solid #d5d5d5;
+}
+.styled-icons.icon-dark a {
+  background-color: #333333;
+  color: #eeeeee;
+  display: block;
+  font-size: 18px;
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+}
+.styled-icons.icon-dark a:hover {
+  color: #5e5e5e;
+}
+.styled-icons.icon-dark.icon-bordered a {
+  background-color: transparent;
+  border: 2px solid #111111;
+  color: #111111;
+}
+.styled-icons.icon-dark.icon-bordered a:hover {
+  background-color: #111111;
+  border-color: #111111;
+  color: #fff;
+}
+.styled-icons.icon-bordered a {
+  border: 1px solid #777777;
+}
+.styled-icons.icon-bordered a:hover {
+  background-color: #777777;
+  color: #fff;
+}
+.styled-icons.icon-rounded a {
+  border-radius: 3px;
+}
+.styled-icons.icon-circled a {
+  border-radius: 50%;
+}
+.styled-icons.icon-sm a {
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  margin: 2px 7px 2px 0;
+  width: 30px;
+}
+.styled-icons.icon-md a {
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+}
+.styled-icons.icon-lg a {
+  font-size: 32px;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.styled-icons.icon-xl a {
+  font-size: 60px;
+  height: 120px;
+  line-height: 120px;
+  width: 120px;
+}
+.styled-icons li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
