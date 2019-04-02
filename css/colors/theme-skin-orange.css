@@ -122,7 +122,7 @@ ul.list.theme-colored.check li:before,
 .pagination.theme-colored li a,
 .pager.theme-colored a,
 .widget .post-title a:hover {
-  color: #213F99;
+  color: #213F99 !important;
 }
 .star-rating span::before {
   color: #213F99 !important;
