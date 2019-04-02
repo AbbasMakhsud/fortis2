@@ -7601,7 +7601,7 @@ margin-top: 11px !important;
 .work-gallery:hover .gallery-bottom-part,
 .line-bottom-theme-colored-2:after,
 .panel-group .panel-title a.active::after {
-  background: #de0827;
+  background-color: rgba(31, 56, 107, 0.9) !important;
 }
 
 .styled-icons a {
