@@ -72,7 +72,7 @@
   </div>
   
   <!-- Header -->
-   <header id="header" class="header">
+  <header id="header" class="header">
     <div class="header-top bg-deep sm-text-center">
       <div class="container">
         <div class="row">
@@ -317,12 +317,12 @@ $("#buy").click(function () {
         <div class="section-content text-center">
           <div class="row"> 
             <div class="col-md-6 col-md-offset-3 text-center">
-              <h2 class="text-theme-colored font-36"> Missiya</h2>
+              <h2 class="text-theme-colored font-36"> Vakansiyalar</h2>
               <ol class="breadcrumb text-center mt-10 white">
                 
     <li><a href="/az">Əsas səhifə</a></li>
-    <li><a href="javascript:void(0)">Missiya</a></li>
-    <!-- <li class="active text-gray-silver">Haqqimizda</li> -->
+    <li><a href="javascript:void(0)">Vakansiyalar</a></li>
+    <li class="active text-gray-silver">Vakansiya</li>
               </ol>
             </div>
           </div>
@@ -330,21 +330,144 @@ $("#buy").click(function () {
       </div>      
     </section>
   </div>
-  
-  <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"><div class="col-md-7 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-  <h3 class="mt-0">Missiya</h3>
-  <p>Ən son və müasir texnologiyalara əsaslanmış keyfiyyətli məhsullar istehsal edərək, müştərimiz, tərəfdaşlarımız, işçilərimiz və cəmiyyət qarşısında etibar, güvən və dəyərlərimizi artırmaq.</p>
-  </div>
-  <div class="col-md-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-  <div class="thumb"> <img class="img-fullwidth" src="images/blog-landing/blog-2-col-img3.jpg"> </div>
-  </div>     
-    </div>    
-    </div>
-    </div>
-  </section>
+<section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="job-overview">
+              <dl class="dl-horizontal">
+                <dt><i class="fa fa-calendar text-theme-colored mt-5 font-15"></i></dt>
+                <dd>
+                  <h5 class="mt-0">Tarix:</h5>
+                  <p>10 gün əvvəl</p>
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-15"></i></dt>
+                <dd>
+                  <h5 class="mt-0">Yer:</h5>
+                  <p>Bakı şəh.</p>
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt><i class="fa fa-user text-theme-colored mt-5 font-15"></i></dt>
+                <dd>
+                  <h5 class="mt-0">İş adı:</h5>
+                  <p>Mühasibat</p>
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt><i class="fa fa-money text-theme-colored mt-5 font-15"></i></dt>
+                <dd>
+                  <h5 class="mt-0">Maaş.:</h5>
+                  <p>10000 - 13000azn</p>
+                </dd>
+              </dl>
+              <a class="btn btn-dark mt-20" href="#">Müraciət et</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="icon-box mb-0 p-0">
+              <a href="#" class="icon icon-gray pull-left mb-0 mr-10">
+                <i class="pe-7s-users"></i>
+              </a>
+              <h3 class="icon-box-title pt-15 mt-0 mb-40">Mühasibat</h3>
+              <hr>
+              <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi id perspiciatis facilis nulla possimus quasi, amet qui. Ea rerum officia, aspernatur nulla neque nesciunt alias repudiandae doloremque, dolor, quam nostrum laudantium earum illum odio quasi excepturi mollitia corporis quas ipsa modi nihil, ad ex tempore.</p>
+              <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi id perspiciatis facilis nulla possimus quasi, amet qui. Ea rerum officia, aspernatur nulla.</p>
+            </div>
+            <h5 class="mt-30">Tələblər:</h5>
+            <ul class="list theme-colored">
+              <li>Lorem ipsum dolor sit elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="divider parallax layer-overlay overlay-light" data-stellar-background-ratio="0.5" data-bg-img="images/bg/bg1.jpg" style="background-image: url(&quot;images/bg/bg1.jpg&quot;); background-position: 50% 22.5px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 bg-lightest-transparent p-30 pt-10">
+            <h3 class="text-center text-theme-colored mb-20">Müraciət et</h3>
+            <form id="job_apply_form" name="job_apply_form" action="includes/job.php" method="post" enctype="multipart/form-data" novalidate="novalidate">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_name">Ad <small>*</small></label>
+                    <input id="form_name" name="form_name" type="text" placeholder="Enter Name" required="" class="form-control" aria-required="true">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_email">Email <small>*</small></label>
+                    <input id="form_email" name="form_email" class="form-control required email" type="email" placeholder="Enter Email" aria-required="true">
+                  </div>
+                </div>
+              </div>
+              <div class="row">               
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_sex">Cins <small>*</small></label>
+                    <select id="form_sex" name="form_sex" class="form-control required" aria-required="true">
+                      <option value="Male">Kişi</option>
+                      <option value="Female">Qadın</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_post">Əvvəl işləyit <small>*</small></label>
+                    <select id="form_post" name="form_post" class="form-control required" aria-required="true">
+                      <option value="Finance Manager">Mühasibatr</option>
+                      <option value="Area Manager">Branch Manager</option>
+                      <option value="Country Manager">Country Manager</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form_message">Mesaj <small>*</small></label>
+                <textarea id="form_message" name="form_message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer" aria-required="true"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="form_attachment">C/V Yüklə</label>
+                <input id="form_attachment" name="form_attachment" class="file" type="file" multiple="" data-show-upload="false" data-show-caption="true">
+                <!-- <small>Maximum upload file size: 12 MB</small> -->
+              </div>
+              <div class="form-group">
+                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+                <button type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">Müraciət et</button>
+              </div>
+            </form>
+            <!-- Job Form Validation-->
+            <script type="text/javascript">
+              $("#job_apply_form").validate({
+                submitHandler: function(form) {
+                  var form_btn = $(form).find('button[type="submit"]');
+                  var form_result_div = '#form-result';
+                  $(form_result_div).remove();
+                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                  var form_btn_old_msg = form_btn.html();
+                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                  $(form).ajaxSubmit({
+                    dataType:  'json',
+                    success: function(data) {
+                      if( data.status == 'true' ) {
+                        $(form).find('.form-control').val('');
+                      }
+                      form_btn.prop('disabled', false).html(form_btn_old_msg);
+                      $(form_result_div).html(data.message).fadeIn('slow');
+                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                    }
+                  });
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <!-- end main-content -->
   
