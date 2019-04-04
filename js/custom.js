@@ -339,7 +339,7 @@
                 focus: '#name',
 
                 mainClass: 'mfp-no-margins mfp-fade',
-                closeBtnInside: false,
+                // closeBtnInside: false,
                 fixedContentPos: true,
 
                 // When elemened is focused, some mobile browsers in some cases zoom in
